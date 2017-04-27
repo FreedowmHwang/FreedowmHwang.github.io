@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="iOS 拾遗," />
 
 
 
@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="测试一 哈哈哈 呵呵呵 嘿嘿嘿  二三">
-<meta name="keywords">
+<meta name="description" content="关于PrefixHeader.pch在项目中添加PrefixHeader.pch，其中引用的头文件会自动被项目中的所有文件引用（全局引用），添加方法：  新建PCH File文件 在Build Settings 中搜索Prefix ,在Apple LLVM x.x -Languge 中的Prefix Herder 添加新建   的Prefix的路径(直接将这个文件拖进去就行) 将工程名之前的路径替">
+<meta name="keywords" content="iOS 拾遗">
 <meta property="og:type" content="article">
-<meta property="og:title" content="测试文章">
-<meta property="og:url" content="http://yoursite.com/2017/04/06/测试文章/index.html">
+<meta property="og:title" content="iOS 2017.4.27拾遗">
+<meta property="og:url" content="http://yoursite.com/2017/04/27/拾遗1/index.html">
 <meta property="og:site_name" content="黄天乐的个人博客">
-<meta property="og:description" content="测试一 哈哈哈 呵呵呵 嘿嘿嘿  二三">
-<meta property="og:updated_time" content="2017-04-06T08:36:21.000Z">
+<meta property="og:description" content="关于PrefixHeader.pch在项目中添加PrefixHeader.pch，其中引用的头文件会自动被项目中的所有文件引用（全局引用），添加方法：  新建PCH File文件 在Build Settings 中搜索Prefix ,在Apple LLVM x.x -Languge 中的Prefix Herder 添加新建   的Prefix的路径(直接将这个文件拖进去就行) 将工程名之前的路径替">
+<meta property="og:updated_time" content="2017-04-27T03:12:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="测试文章">
-<meta name="twitter:description" content="测试一 哈哈哈 呵呵呵 嘿嘿嘿  二三">
+<meta name="twitter:title" content="iOS 2017.4.27拾遗">
+<meta name="twitter:description" content="关于PrefixHeader.pch在项目中添加PrefixHeader.pch，其中引用的头文件会自动被项目中的所有文件引用（全局引用），添加方法：  新建PCH File文件 在Build Settings 中搜索Prefix ,在Apple LLVM x.x -Languge 中的Prefix Herder 添加新建   的Prefix的路径(直接将这个文件拖进去就行) 将工程名之前的路径替">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/06/测试文章/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/27/拾遗1/"/>
 
 
 
 
 
-  <title> 测试文章 | 黄天乐的个人博客 </title>
+  <title> iOS 2017.4.27拾遗 | 黄天乐的个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -260,7 +260,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/06/测试文章/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/27/拾遗1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Terry Hwang">
@@ -281,7 +281,7 @@
             
             
               
-                测试文章
+                iOS 2017.4.27拾遗
               
             
           </h1>
@@ -296,8 +296,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-06T16:21:59+08:00">
-                2017-04-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-27T10:45:00+08:00">
+                2017-04-27
               </time>
             
 
@@ -332,12 +332,24 @@
       
 
       
-        <h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><h3 id="一"><a href="#一" class="headerlink" title="一"></a>一</h3><ol>
-<li>哈哈哈</li>
-<li>呵呵呵</li>
-<li>嘿嘿嘿</li>
+        <h2 id="关于PrefixHeader-pch"><a href="#关于PrefixHeader-pch" class="headerlink" title="关于PrefixHeader.pch"></a>关于PrefixHeader.pch</h2><p>在项目中添加PrefixHeader.pch，其中引用的头文件会自动被项目中的所有文件引用（全局引用），添加方法：</p>
+<ol>
+<li>新建PCH File文件</li>
+<li>在Build Settings 中搜索Prefix ,在Apple LLVM x.x -Languge 中的Prefix Herder 添加新建   的Prefix的路径(直接将这个文件拖进去就行)</li>
+<li>将工程名之前的路径替换成工程的相对路径$(SRCROOT)</li>
 </ol>
-<h3 id="二"><a href="#二" class="headerlink" title="二"></a>二</h3><h3 id="三"><a href="#三" class="headerlink" title="三"></a>三</h3>
+<h2 id="OC中的static关键字使用"><a href="#OC中的static关键字使用" class="headerlink" title="OC中的static关键字使用"></a>OC中的static关键字使用</h2><ol>
+<li>在函数体内定义的static的作用域为该函数体,该变量在内存中只被分配一次,因此,其值在下次调用时仍维持上次的值不变</li>
+<li>在模块内的static全局变量可以被模块内所用函数访问,但是不能被模块外的其他函数访问</li>
+<li>在模块内的staic全局变量可以被这一模块内的其他函数调用,这个函数的使用范围被限制在这个模块内</li>
+<li>在类中的static成员变量属于整个类所拥有,对类的所有对象只有一份拷贝,也就是说只要是该类的对象,那么该对象的中被static修饰的实例变量都指向同一块地址</li>
+</ol>
+<h2 id="OC中const关键字的使用"><a href="#OC中const关键字的使用" class="headerlink" title="OC中const关键字的使用"></a>OC中const关键字的使用</h2><ol>
+<li>被const关键字修饰的实例变量,在初始化之后,其值就不能改变了</li>
+<li>对指针来说,可以指定指针本身为const,也可以指定指针所指的数据为const,或者二者同时指定为const</li>
+<li>对于类的成员函数,若指定其为const类型, 则表明他是一个函数,不能修改类的成员变量</li>
+</ol>
+
       
     </div>
 
@@ -364,27 +376,17 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/iOS-拾遗/" rel="tag"># iOS 拾遗</a>
+          
+        </div>
+      
 
       
         
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/06/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -453,7 +455,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -461,6 +463,15 @@
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>
@@ -492,7 +503,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#测试"><span class="nav-number">1.</span> <span class="nav-text">测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一"><span class="nav-number">1.0.1.</span> <span class="nav-text">一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二"><span class="nav-number">1.0.2.</span> <span class="nav-text">二</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三"><span class="nav-number">1.0.3.</span> <span class="nav-text">三</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于PrefixHeader-pch"><span class="nav-number">1.</span> <span class="nav-text">关于PrefixHeader.pch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OC中的static关键字使用"><span class="nav-number">2.</span> <span class="nav-text">OC中的static关键字使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OC中const关键字的使用"><span class="nav-number">3.</span> <span class="nav-text">OC中const关键字的使用</span></a></li></ol></div>
             
 
           </div>
